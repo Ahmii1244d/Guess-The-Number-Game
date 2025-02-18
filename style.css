@@ -1,0 +1,243 @@
+body {
+    font-family: 'Playfair Display', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #111;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+h1,
+h2 {
+    color: #f3c13b;
+   
+    font-size: 25px;
+    margin: 10px 0;
+
+}
+
+input[type="number"] {
+    padding: 14px;
+    margin: 20px 0;
+    border: 2px solid #f3c13b;
+    background-color: #1d1d1d;
+    color: #f3c13b;
+    font-size: 22px;
+    border-radius: 12px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    box-shadow: 0 0 10px rgba(243, 193, 59, 0.8);
+    transition: 0.2s;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    box-shadow: 0 0 20px rgba(243, 193, 59, 1);
+}
+
+button {
+    background-color: #f3c13b;
+    /* Soft Yellow */
+    color: #1d1d1d;
+    font-size: 22px;
+    padding: 15px 30px;
+    border: 3px solid #ff0000;
+    /* Red Border */
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+font-family: 'Playfair Display', sans-serif;
+    font-weight: 300;
+    box-shadow: 0 0 10px rgba(243, 193, 59, 0.8);
+}
+
+button:hover {
+    background-color: #ff8f00;
+    /* Orange Hover Effect */
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 143, 0, 0.8);
+}
+
+#chances {
+    color: #ff0000;
+    
+    font-size: 20px;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+}
+
+#score {
+    color: #4CAF50;
+    /* Green for score */
+    font-size: 20px;
+    text-shadow: 0 0 10px #4CAF50, 0 0 20px #4CAF50;
+}
+
+#message {
+    font-size: 20px;
+    margin-top: 20px;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+}
+
+#message.gameOver {
+    color: #ff0033;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ff0033, 0 0 20px #ff0033;
+}
+
+#message.congrats {
+    color: #00ff00;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+}
+
+/* .container {
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #1d1d1d;
+   
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+    margin-top: 30px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+} */
+
+button:focus {
+    outline: none;
+}
+
+@keyframes neonGlow {
+    0% {
+        text-shadow: 0 0 15px #f3c13b, 0 0 30px #f3c13b, 0 0 45px #f3c13b;
+    }
+
+    50% {
+        text-shadow: 0 0 25px #f3c13b, 0 0 50px #f3c13b, 0 0 75px #f3c13b;
+    }
+
+    100% {
+        text-shadow: 0 0 15px #f3c13b, 0 0 30px #f3c13b, 0 0 45px #f3c13b;
+    }
+}
+
+h1 {
+    animation: neonGlow 1.5s ease-in-out infinite;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+@keyframes buzzerShake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    75% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.buzzer-shake {
+    animation: buzzerShake 1s ease-in-out;
+}
+.music{
+    display:flex;
+  gap: 30px;
+    justify-content: center;
+}
+input[type=radio]{
+    transform:scale(2);
+
+}
+.check{
+display: flex;
+gap: 20px;
+justify-content: center;
+align-items: center;
+}
+
+.music-btn{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+   
+}
+button.active{
+
+            background-color: green;
+            color: white;
+        
+}
+
+.transform-button {
+    transition: transform 0.2s ease;
+}
+
+
+.transform-button.active {
+    transform: scale(1.1);
+}
+.popup {
+    background-color: #1d1d1d;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    visibility: visible;
+    animation: popIn 0.8s ease-out;
+}
+
+.popup p {
+    text-align: left;
+    line-height: 20px;
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.container {
+    padding: 30px;
+        border-radius: 12px;
+        background-color: #1d1d1d;
+    
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+        margin-top: 30px;
+        width: 80%;
+        max-width: 600px;
+        position: relative;
+  
+    display: none;
+}
+.crt{
+    overflow: hidden;
+}

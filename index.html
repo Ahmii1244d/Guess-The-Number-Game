@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+</head>
+<body class="crt">
+    <h1>BY AHMI MUGHAL</h1>
+    <div class="container">
+    <h2>Guess The Number Between (1-100)</h2>
+    <p style="color: #d3d3d3;">You have <span id="chances">10</span> chances left</p>
+   <div class="center"> 
+    <input class= "inf" type="number" id="userGuess" min="1" max="100"></div>
+    <div class="center">
+    <button class="buttons transform-button" id="guessButton" >Guess</button>
+    </div>
+    <p id="message" style="color: #d3d3d3;"></p>
+<p style="color: #d3d3d3;">Score: <span id="score">100</span></p>
+   <div class="center"> <button class="buttons transform-button"  id="reset">Restart Game</button></div>
+<div class="music">
+    <h1>MUSIC</h1><div class="check"><br><span class="music-btn" style="color: #f3c13b;"><input type="radio" id="ON" name="one">ON</span><span class="music-btn" style="color: #f3c13b;"><input type="radio" id="OFF" name="one"> OFF</span><br></div>
+</div>
+
+</div>
+<div class="popup" id="popup"><div><h1 style="font-size: 20px;">INSTRUCTIONS TO PLAY</h1></div>
+<p style="color: #d3d3d3;"><span style="font-weight: bold; color: #f3c13b;">Guess the Number</span>: Try to guess the secret number between 1 and 100.</p>
+<p style="color: #d3d3d3;"><span style="font-weight: bold; color: #f3c13b;">Hints</span>: After each incorrect guess, you'll get a hint telling you whether the number is higher or lower.</p>
+<p style="color: #d3d3d3;"><span style="font-weight: bold; color: #f3c13b;">Chances</span>: You have 10 chances to guess the correct number.</p>
+<p style="color: #d3d3d3;"><span style="font-weight: bold; color: #f3c13b;">Winning</span>: Guess the number correctly to win!</p>
+<p style="color: #d3d3d3;"><span style="font-weight: bold; color: #f3c13b;">Losing</span>: If you run out of chances, you lose the game.</p>
+<p style="color: #d3d3d3;"><span style="font-weight: bold; color: #f3c13b;">Restart</span>: Click "Restart" to play again with new chances.</p>
+<p style="color: #d3d3d3;"><span style="font-weight: bold; color: #f3c13b;">Enjoy</span>: Have fun and challenge yourself to beat your score!</p>
+<button class="start" id="start">Start Game</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
